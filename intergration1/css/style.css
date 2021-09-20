@@ -1,0 +1,361 @@
+:root {
+  --primary-color: rgb(65, 186, 219);
+  --light-color: #fff;
+  --danger-color: rgb(221, 107, 41);
+}
+
+
+body {
+
+    font-family: "Montserrat";
+}
+
+
+
+nav {
+  background-color: rgb(68, 129, 129);
+  padding: 50px 0;
+}
+
+.nav-bar {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+.nav-bar li {
+  margin: 0 10px;
+  padding: 20px;
+  border: 1px solid var(--light-color);
+}
+
+.nav-bar li:hover a {
+  color: rgb(224, 211, 211);
+  transition: 0.3s all;
+}
+
+.hero {
+  background-image: url(https://images.pexels.com/photos/1431822/pexels-photo-1431822.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  height: 600px;
+  background-size: cover;
+  background-position-y: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container {
+  width: 50%;
+  text-align: center;
+}
+
+.btn {
+  color: var(--light-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: 0.3s all;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #2d3436;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+}
+
+.btn-danger {
+  background-color: var(--danger-color);
+}
+
+.btn-primary:hover {
+  border: 1px solid var(--primary-color);
+}
+
+.btn-danger:hover {
+  border: 1px solid var(--danger-color);
+}
+
+
+
+
+.card {
+
+border: 1px solid #aaa;
+/* box-shadow: offset-x offset-y  blur  color */
+box-shadow: 0 0 6px rgb(2 0 0 / 20%) ;
+border-radius: 3px;
+
+
+}
+
+
+.card-body {
+
+    padding: 20px;
+
+}
+
+
+.card img {
+    width: 100%;
+}
+
+.card-footer {
+
+    text-align: center;
+    padding: 10px;
+}
+
+/* media query taille d'ecran*/
+
+
+
+
+
+
+/* media query mobile first */
+
+
+@media screen and (min-width: 600px) {
+
+
+
+}
+
+/* selectionner un enfant
+.col:nth-child(even) {
+  background-color: rgb(26, 26, 167);
+}
+
+.col:nth-child(odd) {
+    background-color: red;
+}
+
+*/
+
+ 
+
+/*  after and before */
+
+h2 {
+    position: relative;
+    text-align: center;
+    font-size: 4em;
+    font-weight: 100;
+}
+
+h2:before {
+    content: "";
+    display: inline-block;
+    width: 200px;
+    height: 1px;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: 50%;
+    transition: 0.3s all;
+    
+}
+
+
+h2:hover:before {
+
+    bottom: -5px;
+}
+
+/* h2:after{
+
+    content: "";
+
+} */
+
+
+/*jeudi 18 septembre */
+
+#projects [class^="col-"]:first-child {
+
+background-color: var(--primary-color);
+
+}
+
+
+.nav {
+
+list-style: none;
+color: #fff;
+font-size: 1.5em;
+
+}
+
+.nav li {
+
+    margin: 20px 0;
+    position: relative;
+}
+
+
+.nav li:hover {
+color: #d8d3fd;
+cursor: pointer;
+transition: 0.3s all;
+}
+
+
+
+
+.nav li::before {
+content: "" ;
+display: block;
+position: absolute;
+width: 0%;
+height: 1px;
+background-color: black;  
+bottom: 50%;  
+transition: 0.8s all;
+}
+
+
+
+.nav li:hover::before {
+  
+    animation: hover-nav-li 1s ease ;
+}
+
+    
+
+@keyframes hover-nav-li {
+
+0% {
+    width: 0%;
+}
+
+20% {
+
+    width: 30%;
+}
+
+50% {
+
+    width: 50%;
+}
+
+100% {
+
+    width: 100%;
+}
+
+
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.portfolio:first-child {
+
+    padding-right: 0;
+}
+
+.portfolio .item {
+    position: relative;
+    width: 20%;
+    overflow: hidden;
+    padding: 1px;
+
+}
+
+
+.portfolio .item  img {
+    width: 110%;
+
+}
+
+
+.portfolio .item:hover .hover {
+   top: 0;
+
+}
+
+
+
+
+.portfolio .hover {
+    
+position: absolute;
+top: 350px;
+left: 0;
+background-color:  rgba(0, 0, 0, 0.5);
+width: 100%;
+height: 100%;
+transition: 0.3s all;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #fff;
+font-size: 2em;
+
+}
+
+
+
+/* Form */
+
+
+.row4 {
+
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.form {
+
+ font-size: 3rem;
+  margin: 2rem 0;
+
+
+}
+
+
+form {
+ 
+  border: 1px solid #aaa;
+  /* box-shadow: offset-x offset-y  blur  color */
+  box-shadow: 1 1 6px rgb(2 0 0 / 20%) ;
+  border-radius: 3px;
+
+}
+
+form:nth-child(odd) {
+
+ padding: 1rem;
+
+
+}
+
+form:nth-child(even) {
+
+
+  padding: 1rem;
+ 
+ 
+ }
+
+
+
+
+

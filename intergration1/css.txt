@@ -1,0 +1,200 @@
+////////////////////////////////////////Cours Css/////////////////////////////////////////////////////////
+
+/////////////// Commande pour creer une navbar et liste //////////
+
+nav>ul.nav-bar>li*4>lorem
+
+li*4>a>lorem1
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light " id="mainNav">
+            
+              <a class="navbar-brand" id="brand" href="#">Chris's Cinema</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <form class="d-flex SearcFilm">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <form class="d-flex login">
+                  <button class="btn btn-outline-success btn1" type="submit">MON COMPTE</button>
+                </form>
+              </div>
+
+
+            
+          </nav>
+
+
+
+// super centered html disposition
+
+
+
+<div class="parent blue">
+
+<div class="box coral" contenteditable>
+:)
+</div>
+
+
+// super Centrered css
+
+./ex1 .parent {
+
+display: grid;
+place-items: center;
+
+}
+
+
+
+
+// The deconstructed pankake
+
+
+
+
+
+
+
+ //The deconstructed pankake css
+
+
+.ex2 .parent {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content : center;
+}
+
+.ex2 .box {
+
+flex: 1 1 150 px; /*   stretching */
+flex: 0 1 150 px; /*  no stretching */
+}
+
+
+
+
+// sidebar says html
+
+
+<div class="parent"> 
+
+
+<div class="selection yellow"  contenteditable > 
+
+Min: 150px / Max: 25%
+
+</div>
+
+
+<div class="selection purple"  contenteditable > 
+this element takes the second grid position (1fr)
+it takes up the rest of the remaining space
+</div>
+
+</div>
+
+
+// sidebar says css
+
+.ex3 .parent {
+
+  display: grid;
+  grid-template-columns: minimax(150px, 25%) 1fr;
+}
+
+
+
+
+
+
+// pankake stack 
+
+
+.ex4 .parent {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+
+
+
+// Holy grail layout html
+
+<div class="parent"> 
+
+<header class="pink section"> Header</header>
+
+<div class="left-side blue section" contenteditable> 
+left sidebar
+</div>
+<main class="section coral" contenteditable> 
+Main Content
+</main>
+
+<div class="right-side yellow section" contenteditable> right sidebar</div>
+
+<footer class=" green section"> Footer </footer>
+
+</div>
+
+
+
+
+// Holy grail layout css
+
+
+.ex5 .parent {
+
+ display: grid;
+  grid-template-rows: auto 1fr auto / auto 1fr auto;
+
+}
+
+
+.ex5 header {
+  padding: 2rem;
+  grid-columns: 1/4;
+}
+
+
+ex5 .left-side {
+  
+  grid-columns: 1/2;
+}
+
+
+
+ex5 .main-content {
+  
+  grid-columns: 2/3;
+}
+
+
+ex5 .right-side {
+  
+  grid-columns: 3/4;
+}
+
+
+ex5 footer {
+  
+  grid-columns: 1/4;
+}
+
+
+
+

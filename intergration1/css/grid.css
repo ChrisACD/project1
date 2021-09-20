@@ -1,0 +1,190 @@
+/* annuler le padding et le marging automatique */
+
+*{
+
+box-sizing: border-box;
+
+}
+
+.container {
+    margin: 50px 10%;
+  }
+  
+  .container-fluid {
+    margin: 50px 0;
+  }
+  
+/* disposition flex box*/
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+
+
+  .col {
+    width: calc(90% / 4);
+    /*height: 300px;*/
+    /* overflow-y: scroll; */ 
+    /* display: inline-block; 
+    margin: 10px;  */ 
+}
+
+
+
+
+
+
+
+.col-1 {
+
+    width: calc(100% / 12 * 1);
+    
+    }
+    
+    
+    
+.col-2 {
+    
+width: calc(100% / 12 * 2);
+        
+}
+
+
+ .col-3 {
+    
+ width: calc(100% / 12 * 3);
+                
+}
+                
+                
+                
+.col-4 {
+    
+width: calc(100% / 12 * 4);
+                    
+}
+                    
+.col-5 {
+    
+width: calc(100% / 12 * 5);
+                        
+        }
+
+.col-6 {
+    
+width: calc(100% / 12 * 6);
+                            
+  }
+    
+ .col-7 {
+    
+width: calc(100% / 12 * 7);
+                                
+ }
+ .col-8 {
+    
+ width: calc(100% / 12 * 8);
+                                    
+ }
+
+ .col-9 {
+    
+width: calc(100% / 12 * 9);
+                                        
+}
+ .col-10 {
+    
+width: calc(100% / 12 * 10);
+                                            
+}
+.col-11 {
+    
+width: calc(100% / 12 * 11);
+                                                
+}
+
+.col-12 {
+    
+width: calc(100% / 12 * 12);
+ }
+    
+    
+/*  mettre du padding entre les cols   */
+
+
+.row [class^="col-"] {
+
+    padding: 0 10px ;
+}
+
+.row [class^="col-"]:first-child {
+
+    padding-left:  0;
+}
+
+.row [class^="col-"]:last-child {
+
+    padding-right :  0;
+}
+
+
+
+
+.debug [class^="col"] {
+
+    height: 300px;
+}
+
+.debug [class^="col-"]:nth-child(odd) {
+
+    background-color: red;
+}
+
+
+.debug [class^="col-"]:nth-child(even) {
+
+    background-color: blue;
+}
+
+
+.debug .col:nth-child(odd) {
+
+background-color: red;
+
+}
+
+
+.debug .col:nth-child(even) {
+
+    background-color:blue;
+    
+    }
+
+
+@media screen and (max-width: 600px) {
+
+    [class^="col-"] {
+        width: 100%;
+         } 
+
+
+
+ /* .col {
+ width: 100%;
+  } */
+                                                      
+ .container {
+ margin: 50px 0;
+ }
+                                                      
+}                                                     
+
+
+
+
+
+
+
